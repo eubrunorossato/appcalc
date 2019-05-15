@@ -94,8 +94,18 @@
     
     <script>
       function calcular(tipo, valor){
-        console.log(tipo)
-        console.log(valor)
+        if (tipo === 'acao'){
+           document.getElementById('resultado').value +=  valor
+
+           if(valor ==='c'){
+             document.getElementById('resultado').value = ""
+           } 
+
+        }
+        else if(tipo ==='valor'){
+          document.getElementById('resultado').value += valor
+        } 
+
       }
     </script>
 
