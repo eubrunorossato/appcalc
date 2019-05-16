@@ -99,16 +99,16 @@
            if(valor ==='c'){
              document.getElementById('resultado').value = ""
            }
-
+           //checkando acaoes
            if(valor==='+' || valor==='-' || valor==='*' || valor==='/' || valor==='.' ){
             document.getElementById('resultado').value += valor;  
            } 
-           //Resultado sendo mostrado haushaushauhsauua
+           //resultado
            if(valor ==='='){
              var fieldValue = eval(document.getElementById('resultado').value)
              document.getElementById('resultado').value = fieldValue
            }
-
+           //checkando valoresgit
         }else if(tipo ==='valor'){
           document.getElementById('resultado').value += valor 
         } 
