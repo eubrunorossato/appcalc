@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Array Activite</title>
+    </head>
+
+    <body>
+
+        <input id="input" placeholder="type here" type="text">
+        <button onclick="add()">ADD</button>
+        <button onclick="order()">Order</button>
+
+        <script>
+            var indice = 0
+            var lista = []
+
+                function add(){
+                    var currentText = document.getElementById('input').value
+                    var index = lista.indexOf(currentText)
+
+                    if(currentText === ""){
+                        alert('Invalid value, please insert a valid value in the camp')
+                    }else if(index != -1){
+                        alert("The string already exist, please type another one")
+                        document.getElementById('input').value = ''
+                    } else {
+                        lista[indice] = currentText
+                        indice += 1
+                        console.log(lista)
+                        document.getElementById('input').value = '' 
+                    }
+                }
+    
+                function order(){
+                    console.log(lista.sort())
+                }
+
+        </script>
+
+
+    </body>
+
+</html>
