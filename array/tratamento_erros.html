@@ -1,0 +1,46 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+        <script>
+
+            throw new Error ()
+
+            var video = []
+
+            video[1] = []
+            video[1]['nome'] = 'Game of Thrones'
+            video[1]['categoria'] = 'Fantasy'
+
+            function getVideo(){
+
+                try{
+                    console.log(video[0]['nome'])
+                }catch(e){
+                    console.log(e)
+                    console.log('agora sim podemos tratar o erro')
+                    throw new Error ('there was e error, we are working on it to solve this as soon as possible')
+                }finally{
+                    console.log('sempre passa por aqui "try/catch"')
+                }
+                
+                console.log('a aplicação nao morreu')
+                
+            }
+
+            function tratarErro(e){
+                //Sending to development team
+                console.log(e)
+            }
+
+            getVideo(video)
+
+        </script>
+
+
+    </body>
+
+</html>

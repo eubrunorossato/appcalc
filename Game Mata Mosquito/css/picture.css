@@ -1,0 +1,11 @@
+.center{
+    position: fixed;
+    left: 35%;
+    top: 10%;
+
+}
+
+.backGroungImage{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
