@@ -7,6 +7,11 @@
 
 }
 
+.mosquito1{
+    height: 50px;
+    width: 50px;
+}
+
 .backGroungImage{
     position: fixed;
     -webkit-background-size: cover;
