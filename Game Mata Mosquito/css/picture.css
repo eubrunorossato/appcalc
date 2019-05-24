@@ -35,29 +35,9 @@
 .ladoB{
     transform: scaleX(-1)
 }
-/*
-.backGroungImage{
-    position: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 
-.div{
+.div1{
     position: relative;
-    height: 90px;
-    margin-top: 150%;
-    margin-left: 198%; 
+    margin-top: 40%;
+    margin-left: 45%;
 }
-
-.div2{
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 33.8px;
-}
-
-*/
