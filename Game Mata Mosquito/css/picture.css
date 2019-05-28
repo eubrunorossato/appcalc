@@ -2,13 +2,8 @@
     background-image: url(../pictures/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
-}
-
-.center{
-    width: 400px;
-    height: 300px;
-    position: fixed;
-    margin-top: 5%;
+    max-width: 100%;
+    max-height: 100vh;
 }
 
 .mosquito1{
@@ -25,6 +20,21 @@
     height: 90px;
     width: 90px;
 }
+
+.pictureCenter{
+    text-align: center;
+}
+
+.selectCenter{
+    position: relative;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+
+.bottonCenter{
+    text-align: center;
+}
+
 
 .ladoA{
     transform: scaleX(1)
@@ -59,4 +69,17 @@
     float: left;
     font-size: 20px;
     font-weight: bold;
+}
+
+.bx--btn {
+    text-align: center !important;
+    padding: 0.875rem 30px 0.875rem 30px;
+    background-color:#FFE4C4;
+    border-color: #FFE4C4;
+    border: px;
+    color: black;
+}
+
+.bx--btn--danger:hover {
+    background-color: rgb(209, 187, 161)
 }

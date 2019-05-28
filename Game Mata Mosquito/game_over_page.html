@@ -3,35 +3,40 @@
     <head>
         <meta charset="utf-8">
         <title>Game Over</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css">
         <link rel="stylesheet" href="css/picture.css">
         <script src="jogo.js"></script>
     </head>
-
     <body class="body">
-
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex justify-content-center">
-                        <img src="./pictures/game_over.png"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex justify-content-center">
-                        <div class=" btn-group btn-group-lg"> 
-                            <button type="button" class="btn btn-warning active " onclick="reiniciar()">Reiniciar</button>
-                            <button type="button" class="btn btn-warning active " onclick="paginaInicial()">Pagina Inicial</button>   
-                        </div>
-                </div>
-            </div>
-        </div>
         
+        <div class="bx--grid">
+            <div class="bx--row">
+                <div class="bx--col">
+                </div>
+                <div class="bx--col">
+                        <img src="./pictures/game_over.png"/>    
+                </div>
+                <div class="bx--col"></div>
+            </div>
+        </div>
+
+        <div class="bx--grid">
+            <div class="bx--row">
+                <div class="bx--col">
+                </div>
+                <div class="bx--col">
+                    <div class="pictureCenter"> 
+                        <button class="bx--btn bx--btn--danger" aria-label="danger" type="button" onclick="reiniciar()" >Reiniciar</button> 
+                        <button class="bx--btn bx--btn--danger" aria-label="danger" type="button" onclick="paginaInicial()" >Pagina Inicial</button>
+                    </div>        
+                </div>
+                <div class="bx--col">
+
+                </div>
+            </div>
+        </div>
+
     </body>
 
 </html>
