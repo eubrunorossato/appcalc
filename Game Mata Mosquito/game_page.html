@@ -3,17 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title>Game Mata mosquito</title>
-        <link rel="stylesheet" href="css/picture.css">
         <script src="jogo.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/picture.css">
     </head>
-    <body onresize="alturaLargura()">
+    <body onresize="alturaLargura()" class="body">
+
+        <div class="painel">
+
+            <div class="vidas">
+                <img id="v1" src="pictures/coracao_cheio.png"/>
+                <img id="v2" src="pictures/coracao_cheio.png"/>
+                <img id="v3" src="pictures/coracao_cheio.png"/>
+            </div>
+
+            <div class="cronometro">
+                
+            </div>
+
+        </div>
 
         <script>
            posicaoMosquito()
 
-           setInterval(function() {
-               posicaoMosquito() 
-           }, 1000)
+           mosquitoLoop()
+
+           if(teste === true){
+                setInterval(function() {
+                    posicaoMosquito() 
+                }, 3000)  
+           }
                
         </script>
 
