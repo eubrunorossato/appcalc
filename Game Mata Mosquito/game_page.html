@@ -23,17 +23,13 @@
         <script>
             document.getElementById('cronometro').innerHTML = tempoRestante
 
-           posicaoMosquito()
+            setInterval(function(){
+                cronometro()
+            }, 1000)
 
-           mosquitoLoop()
-
-           setInterval(function() {
-                cronometro() 
-            }, 1000) 
-
-            setInterval(function() {
+           var criaMosca = setInterval(function() {
                 posicaoMosquito() 
-            }, 10000)  
+            }, criaMosquitoTempo )  
               
         </script>
 

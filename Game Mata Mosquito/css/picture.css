@@ -1,4 +1,8 @@
-.body{
+html{
+    cursor: url(../pictures/mata_mosca.png) 30 30 auto; 
+}
+
+body{
     background-image: url(../pictures/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
@@ -83,3 +87,12 @@
 .bx--btn--danger:hover {
     background-color: rgb(209, 187, 161)
 }
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}   

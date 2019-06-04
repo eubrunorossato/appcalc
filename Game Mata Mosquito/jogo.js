@@ -2,7 +2,19 @@ var altura = 0;
 var largura = 0;
 var coracoesAfetados = 0;
 var teste = false;
-tempoRestante = 10;
+tempoRestante = 20;
+var criaMosquitoTempo = 1500;
+
+var nivel = window.location.search;
+var nivel = nivel.replace('?', '')
+
+if(nivel === 'facil'){
+    criaMosquitoTempo = 1500
+}else if(nivel ==='medio'){
+    criaMosquitoTempo = 1000
+}else{
+    criaMosquitoTempo = 750
+}
 
 function mosquitoLoop(){
     setInterval(function() {
@@ -45,9 +57,21 @@ function cronometro(){
         window.location.replace("voce_ganhou.html")
     } 
 
-       tempoRestante-- 
+       tempoRestante-=1 
        document.getElementById('cronometro').innerHTML = tempoRestante
     return tempoRestante  
+}
+
+function iniciarJogo(){
+    nivel = document.getElementById('nivel').value
+
+    if(nivel === ''){
+        alert('Selecione um nivel para iniciar o jogo')
+        return false;
+    }
+
+    window.location.href = 'game_page.html?' + nivel
+
 }
 
 function posicaoMosquito(){     
@@ -57,7 +81,7 @@ function posicaoMosquito(){
         document.getElementById('mosquito').remove()
 
         if(coracoesAfetados === 3){
-            window.location.replace("game_over_page.html")
+            window.location.replace("game_over_page_bootStrap.html")
         }else{
             document.getElementById('v' + coracoesAfetados).src = "pictures/coracao_vazio.png"
         }
@@ -94,14 +118,6 @@ function posicaoMosquito(){
     }
 }
 
-function reiniciar(){
-    window.location.href = "game_page.html"
-}
-
 function paginaInicial(){
-    window.location.href = "pagina_inicial.html"
-}
-
-function comecarJogo(){
-    window.location.href = "game_page.html"
+    window.location.href = "pagina_inicial_bootStrap.html"
 }
